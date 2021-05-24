@@ -1,0 +1,21 @@
+<table>
+    <tr>
+        <td>Action</td>
+        <td>Id</td>
+        <td>Name</td>
+        <td>Age</td>
+    </tr>
+    
+    {{#data}}
+        <tr>
+            <td>
+                <a href="update/{{id}}"><img src="/img/Edite.png" style="width:50px"></a>
+                <a href="deletar/{{id}}" class="deletar"><img src="/img/Lixeira.png" style="width:33px"></a>
+            </td>
+            <td>{{id}}</td>
+            <td>{{name}}</td>
+            <td>{{age}}</td>
+        </tr>
+    {{/data}}
+
+</table>
