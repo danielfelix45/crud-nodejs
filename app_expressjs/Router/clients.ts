@@ -10,4 +10,8 @@ router.get("/sobrenos", clientsController.sobreNos);
 
 router.get("/contatos", clientsController.contatos);
 
+router.get("/trabalheconosco", clientsController.trabalheConosco);
+
+router.get("/conteudotecnologia", clientsController.conteudoTecnologia);
+
 export default router;
