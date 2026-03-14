@@ -1,9 +1,15 @@
 import express from "express";
 import clientsRouter from "./Router/clients";
+import usersRouter from "./Router/users";
 import db from "./db";
 
 const app = express();
+
+// Cria a comunicação entre o formulário e o Model
+app.use(express.urlencoded({ extended: true }));
+
 app.use(clientsRouter);
+app.use(usersRouter)
 
 // Aqui informar que estou usando o pug como template engine.
 app.set("view engine", "pug");  
